@@ -1,15 +1,45 @@
 ---
+import { getCollection } from "astro:content";
+
 import data from "../../config/site.json";
 
 import Default from "../../layouts/Default.astro";
 import Update from "../../components/Update.astro";
+import ReleaseCard from "../../components/ReleaseCard.astro";
+
+function checkOrdering(a, b, ascendingOrder) {
+    if (ascendingOrder) {
+        return b.data.publishedOn.valueOf() - a.data.publishedOn.valueOf();
+    } else {
+        return a.data.publishedOn.valueOf() - b.data.publishedOn.valueOf();
+    }
+}
+
+const chapters = (await getCollection("chapters")).sort(
+    (a, b) => checkOrdering(a, b, data.config.chaptersInAscendingOrder),
+);
 ---
 
 <Default title=`Chapters - ${data.details.title}`>
     <div>
-        {data.authorUpdate.visible && data.authorUpdate.showEverywhere ? <Update /> : null}
+        {
+            data.authorUpdate.visible && data.authorUpdate.showEverywhere ? (
+                <Update />
+            ) : null
+        }
     </div>
     <div class="mt-5">
-        TODO
+        <h1>Releases</h1>
+        <ul>
+            {
+                chapters.map((chapter) => (
+                    <ReleaseCard
+                        id={chapter.id}
+                        title={chapter.data.title}
+                        date={chapter.data.publishedOn}
+                    />
+                ))
+            }
+        </ul>
     </div>
 </Default>

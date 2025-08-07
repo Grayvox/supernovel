@@ -1,0 +1,12 @@
+---
+import FormattedDate from "./FormattedDate.astro";
+
+const { id, title, date } = Astro.props;
+---
+
+<li class="mt-[1rem]">
+    <a href=`/chapters/${id}`>
+        <h2>{title}</h2>
+        <p class="text-[14px] text-subtext">Published on <FormattedDate date={date}/></p>
+    </a>
+</li>

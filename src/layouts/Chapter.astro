@@ -1,0 +1,27 @@
+---
+import '../styles/global.css';
+import '../config/variables.css';
+
+import Meta from "../components/Meta.astro";
+import FormattedDate from '../components/FormattedDate.astro';
+import Footer from '../components/Footer.astro';
+
+const { title, date, notes } = Astro.props;
+---
+
+<html lang="en">
+	<Meta title={title} />
+	<body class="bg-background px-[25rem] py-[5rem]">
+        <div class="text-center">
+            <h1>{title}</h1>
+            <h3 class="text-subtext">Published on <FormattedDate date={date} /></h3>
+        </div>
+        <div>
+            <div>
+                <h3>{notes}</h3>
+            </div>  
+            <slot />
+        </div>
+        <Footer />
+	</body>
+</html>

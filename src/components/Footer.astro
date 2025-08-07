@@ -1,7 +1,9 @@
 ---
+import data from "../config/site.json";
+
 const today = new Date();
 ---
 
 <footer class="text-subtext text-center mt-40">
-    <p>&copy; {today.getFullYear()} Author Name</p>
+    <p>&copy; {today.getFullYear()} {data.details.author}</p>
 </footer>
