@@ -2,8 +2,14 @@
 import data from "../../config/site.json";
 
 import Default from "../../layouts/Default.astro";
+import Update from "../../components/Update.astro";
 ---
 
 <Default title=`Chapters - ${data.details.title}`>
-    TODO
+    <div>
+        {data.authorUpdate.visible && data.authorUpdate.showEverywhere ? <Update /> : null}
+    </div>
+    <div class="mt-5">
+        TODO
+    </div>
 </Default>

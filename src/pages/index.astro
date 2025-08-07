@@ -1,11 +1,20 @@
 ---
-import Default from "../layouts/Default.astro";
-
 import data from "../config/site.json";
 
-let title = data.config.mainPageTitle ? data.config.mainPageTitle : data.details.title;
+import Default from "../layouts/Default.astro";
+import Update from "../components/Update.astro";
+import { Content as HomeContent } from "../content/home.md";
+
+let title = data.config.mainPageTitle
+    ? data.config.mainPageTitle
+    : data.details.title;
 ---
 
 <Default title={title}>
-
+    <div>
+        {data.authorUpdate.visible ? <Update /> : null}
+    </div>
+    <div class="mt-5">
+        <HomeContent />
+    </div>
 </Default>

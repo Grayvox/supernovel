@@ -2,9 +2,15 @@
 import data from "../config/site.json";
 
 import Default from "../layouts/Default.astro";
+import Update from "../components/Update.astro";
 import { Content as AboutContent } from "../content/about.md"
 ---
 
 <Default title=`About the Author - ${data.details.title}`>
-    <AboutContent />
+    <div>
+        {data.authorUpdate.visible && data.authorUpdate.showEverywhere ? <Update /> : null}
+    </div>
+    <div class="mt-5">
+        <AboutContent />
+    </div>
 </Default>
