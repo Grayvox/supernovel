@@ -1,6 +1,7 @@
 ---
 import Meta from "../components/Meta.astro";
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
 const { title } = Astro.props;
 
@@ -13,5 +14,6 @@ import '../config/variables.css';
 	<body class="bg-background px-[25rem]">
 		<Header />
 		<slot />
+		<Footer />
 	</body>
 </html>
