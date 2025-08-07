@@ -1,0 +1,21 @@
+/* Import your font in between these comments */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+/* Import your font in between these comments */
+@import "tailwindcss";
+
+@theme inline {
+    /* Colors */
+    --color-background: #1e1e2e;
+    --color-secondary: #11111b;
+    --color-element: #45475a;
+    --color-header: #cdd6f4;
+    --color-text: #cdd6f4;
+    --color-subtext: #a6adc8;
+    --color-links: #89b4fa;
+    --color-update: #f9e2af;
+    --color-update-text: #df8e1d;
+    /* Font */
+    --font-base: "Libre Caslon Text", serif;
+    --text-header: 32px;
+    --text-subheader: 18px;
+}

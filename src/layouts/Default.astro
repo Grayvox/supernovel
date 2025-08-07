@@ -1,14 +1,17 @@
 ---
-import Head from "../components/Head.astro";
+import Meta from "../components/Meta.astro";
+import Header from "../components/Header.astro";
 
 const { title } = Astro.props;
 
 import '../styles/global.css';
+import '../config/variables.css';
 ---
 
 <html lang="en">
-	<Head title={title} />
-	<body>
+	<Meta title={title} />
+	<body class="bg-background px-[25rem]">
+		<Header />
 		<slot />
 	</body>
 </html>

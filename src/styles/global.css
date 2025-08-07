@@ -1,1 +1,23 @@
+@import url("../config/variables.css");
 @import "tailwindcss";
+
+:root {
+    font-family: var(--font-base);
+    color: var(--color-text);
+}
+
+h1 {
+    color: var(--color-header);
+    font-size: var(--text-header);
+    font-weight: bolder;
+}
+
+h2 {
+    color: var(--color-header);
+    font-size: var(--text-subheader);
+    font-weight: normal;
+}
+
+hr {
+    margin: 0 auto;
+}

@@ -2,8 +2,10 @@
 import Default from "../layouts/Default.astro";
 
 import data from "../config/site.json";
+
+let title = data.config.mainPageTitle ? data.config.mainPageTitle : data.details.title;
 ---
 
-<Default title={data.config.mainPageTitle}>
+<Default title={title}>
 
 </Default>

@@ -1,0 +1,10 @@
+---
+import data from "../config/site.json";
+
+import Default from "../layouts/Default.astro";
+import { Content as AboutContent } from "../content/about.md"
+---
+
+<Default title=`About the Author - ${data.details.title}`>
+    <AboutContent />
+</Default>
