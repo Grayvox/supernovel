@@ -1,6 +1,7 @@
 <div align="center">
     <h1>Supernovel</h1>
     <p><i>The website template for writers making web fictions.</i></p>
+    <p><b>Project is currently WIP. It is advised to not use this until release "0.1.0". Thank you for your patience. :)</b></p>
 </div>
 
 ## What is the point of Supernovel?

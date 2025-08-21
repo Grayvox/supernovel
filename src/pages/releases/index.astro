@@ -15,12 +15,12 @@ function checkOrdering(a: any, b: any, ascendingOrder: boolean) {
     }
 }
 
-const chapters = (await getCollection("chapters")).sort(
-    (a, b) => checkOrdering(a, b, data.config.chaptersInAscendingOrder),
+const releases = (await getCollection("releases")).sort(
+    (a, b) => checkOrdering(a, b, data.config.releases.ascendingOrder),
 );
 ---
 
-<Default title=`Chapters - ${data.details.title}`>
+<Default title=`Releases - ${data.details.project.title}`>
     <div>
         {
             data.authorUpdate.visible && data.authorUpdate.showEverywhere ? (
@@ -32,11 +32,11 @@ const chapters = (await getCollection("chapters")).sort(
         <h1>Releases</h1>
         <ul>
             {
-                chapters.map((chapter) => (
+                releases.map((release) => (
                     <ReleaseCard
-                        id={chapter.id}
-                        title={chapter.data.title}
-                        date={chapter.data.publishedOn}
+                        id={release.id}
+                        title={release.data.title}
+                        date={release.data.publishedOn}
                     />
                 ))
             }

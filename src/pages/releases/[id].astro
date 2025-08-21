@@ -1,11 +1,11 @@
 ---
 import { getCollection, render } from "astro:content";
 
-import Chapter from "../../layouts/Chapter.astro";
+import Release from "../../layouts/Release.astro";
 
 export async function getStaticPaths() {
-    const chapters = await getCollection("chapters");
-    return chapters.map((release) => ({
+    const releases = await getCollection("releases");
+    return releases.map((release) => ({
         params: { id: release.id },
         props: { release },
     }));
@@ -15,10 +15,10 @@ const { release } = Astro.props;
 const { Content } = await render(release);
 ---
 
-<Chapter
+<Release
     title={release.data.title}
     date={release.data.publishedOn}
     notes={release.data.notes}
 >
     <Content />
-</Chapter>
+</Release>

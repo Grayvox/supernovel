@@ -1,16 +1,35 @@
 {
     "details": {
-        "title": "Supernovel",
-        "subtitle": "The website template for writers making web fictions.",
-        "author": "Grayvox",
-        "releaseDate": "January 1st, 2025"
+        "project": {
+            "title": "Supernovel",
+            "subtitle": "The website template for writers making web fictions.",
+            "releaseDate": "January 1st, 2025"
+        },
+        "author": {
+            "name": "Grayvox",
+            "links": {
+                "genericLink": {
+                    "site": "",
+                    "icon": ""
+                }
+            }
+        }
     },
     "config": {
-        "mainPageTitle": "Testing 1 2 3",
-        "chaptersInAscendingOrder": false,
-        "sideChapterNavigation": false,
-        "bottomChapterNavigation": true,
-        "autoStartAudio": true
+        "general": {
+
+        },
+        "mainPages": {
+            "mainPageTitle": "Testing 1 2 3"
+        },
+        "releases": {
+            "ascendingOrder": false,
+            "sideNavigation": false,
+            "bottomNavigation": true,
+            "showPublishingDate": true,
+            "autoStartAudio": true
+        }
+        
     },
     "authorUpdate": {
         "visible": false,
