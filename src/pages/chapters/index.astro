@@ -7,7 +7,7 @@ import Default from "../../layouts/Default.astro";
 import Update from "../../components/Update.astro";
 import ReleaseCard from "../../components/ReleaseCard.astro";
 
-function checkOrdering(a, b, ascendingOrder) {
+function checkOrdering(a: any, b: any, ascendingOrder: boolean) {
     if (ascendingOrder) {
         return b.data.publishedOn.valueOf() - a.data.publishedOn.valueOf();
     } else {
