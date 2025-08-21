@@ -17,17 +17,17 @@
     },
     "config": {
         "general": {
-
+            
         },
         "mainPages": {
             "mainPageTitle": "Testing 1 2 3"
         },
         "releases": {
+            "navBarName": "Releases",
             "ascendingOrder": false,
             "sideNavigation": false,
             "bottomNavigation": true,
-            "showPublishingDate": true,
-            "autoStartAudio": true
+            "showPublishingDate": true
         }
         
     },

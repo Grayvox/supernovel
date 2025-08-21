@@ -6,7 +6,8 @@ const releases = defineCollection({
     schema: z.object({
         title: z.string(),
         publishedOn: z.coerce.date(),
-        notes: z.string().optional()
+        notes: z.string().optional(),
+        audio: z.string().optional()
     })
 });
 
