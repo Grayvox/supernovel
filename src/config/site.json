@@ -7,6 +7,9 @@
         },
         "author": {
             "name": "Grayvox",
+            "nickname": "Gray",
+            "pronouns": "was/were",
+            "title": "Wordpuker",
             "links": {
                 "genericLink": {
                     "site": "",
@@ -17,10 +20,23 @@
     },
     "config": {
         "general": {
-            
+            "openLinksInNewTab": true,
+            "audioVolume": "100",
+            "backgroundImage": {
+                "fileLocation": "",
+                "mainPages": {
+                    "shownOnTop": false,
+                    "shownOnSides": false
+                },
+                "releasePages": {
+                    "shownOnTop": false,
+                    "shownOnSides": false
+                }
+            }
         },
         "mainPages": {
-            "mainPageTitle": "Testing 1 2 3"
+            "mainTitle": "Testing 1 2 3",
+            "homePageIntroAudio": ""
         },
         "releases": {
             "navBarName": "Releases",
@@ -29,7 +45,6 @@
             "bottomNavigation": true,
             "showPublishingDate": true
         }
-        
     },
     "authorUpdate": {
         "visible": false,

@@ -5,8 +5,8 @@ import Default from "../layouts/Default.astro";
 import Update from "../components/Update.astro";
 import { Content as HomeContent } from "../content/home.md";
 
-let title = data.config.mainPageTitle
-    ? data.config.mainPageTitle
+let title = data.config.mainPages.mainTitle
+    ? data.config.mainPages.mainTitle
     : data.details.project.title;
 ---
 

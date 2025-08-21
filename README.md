@@ -14,16 +14,17 @@ Okay so that's not *exactly* what Supernovel is...
 Supernovel is a website template built with writers in mind. It's built to be both customizable and approachable to non-techy individuals. We've baked in some key features we think you'll like to, such as:
 
 **WIP TODO FOR GRAY**
-- [ ] Home page (synopsis, credits)
-- [ ] Chapter index page and chapter collection system
+- [x] Home page (synopsis, credits)
+- [x] Chapter index page and chapter collection system
 - [ ] Author's updates page (for news and announcements)
-- [ ] About the author page (you know what this is smh)
-- [ ] Site details config in `site.json`
-- [ ] CSS variable customization in `variables.css`
+- [x] About the author page (you know what this is smh)
 - [ ] Preset color schemes (parchment, deep blue, Catppuccin, etc.) on docs to paste in `variables.css`
 - [ ] Side-by-side component for illustation
 - [ ] Preset text spacers
-- [ ] Custom audio to play while page is open
+- [x] Custom audio to play for releases
+- [ ] Custom audio to play for home page
+- [ ] Side and bottom release navigation arrows
+- [ ] Background image support for main pages and release pages
 
 Many writers without much technical expertise still use stuff like Wordpress, Blogspot and other old school ways of the web. While these still rock, and provide a lot of ease of use, they're not as fast and efficient as many modern ways to make websites. **That's where Supernovel comes in**.
 
