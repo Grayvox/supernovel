@@ -7,13 +7,21 @@ import NavBar from "./NavBar.astro";
 <div class="py-10 text-center">
     <div class="mb-20">
         <h1 class="pb-2">
-            {data.details.project.title}
+            {
+                data.config.mainPages.showTitleOnTop
+                    ? data.details.project.title
+                    : ' '
+            }
         </h1>
         <h2>
-            {data.details.project.subtitle}
+            {
+                data.config.mainPages.showSubtitleOnTop
+                    ? data.details.project.subtitle
+                    : ' '
+            }
         </h2>
     </div>
-    <hr>
+    <hr />
     <NavBar />
-    <hr>
+    <hr />
 </div>

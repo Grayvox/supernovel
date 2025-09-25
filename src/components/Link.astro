@@ -1,0 +1,13 @@
+---
+import data from "../config/site.json";
+
+const { to } = Astro.props;
+---
+
+<a
+    href={to}
+    target={data.config.general.openLinksInNewTab ? "_blank" : "_self"}
+    rel="noopener noreferrer"
+>
+    <slot />
+</a>
