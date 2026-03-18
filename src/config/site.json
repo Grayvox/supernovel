@@ -43,8 +43,6 @@
         "releases": {
             "navBarName": "Releases",
             "ascendingOrder": false,
-            "sideNavigation": false,
-            "bottomNavigation": true,
             "showPublishingDate": true
         }
     },
